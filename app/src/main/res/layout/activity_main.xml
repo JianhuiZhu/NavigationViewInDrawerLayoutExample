@@ -3,44 +3,47 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/drawer_layout"
+    style="@style/Theme.AppCompat.Light.NoActionBar"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context=".MainActivity"
-    style="@style/Theme.AppCompat.Light.NoActionBar">
+    tools:context=".MainActivity">
 
     <LinearLayout
-        android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@android:color/background_dark">
+        android:background="@android:color/background_dark"
+        android:orientation="vertical">
+
         <TextView
             android:id="@+id/text_header"
-            android:text="Squirrel 1"
-            android:textSize="30sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
             android:layout_marginLeft="20dp"
             android:layout_marginTop="10dp"
-            android:layout_marginBottom="10dp"
-            android:textColor="@android:color/white"
             android:background="@android:color/background_dark"
+            android:text="Squirrel 1"
+            android:textColor="@android:color/white"
+            android:textSize="30sp" />
+
+        <ImageView
+            android:id="@+id/image_view"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-            <ImageView
-                android:id="@+id/image_view"
-                android:background="@android:color/background_dark"
-                android:src="@drawable/squirrel1"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:scaleType="centerCrop"/>
+            android:layout_height="match_parent"
+            android:background="@android:color/background_dark"
+            android:scaleType="centerCrop"
+            android:src="@drawable/squirrel1" />
     </LinearLayout>
+
     <android.support.design.widget.NavigationView
         android:id="@+id/navigation_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_gravity="start"
+        android:layout_marginBottom="5dp"
         android:layout_marginLeft="20dp"
         android:layout_marginTop="5dp"
-        android:layout_marginBottom="5dp"
         app:headerLayout="@layout/navigation_header"
-        app:menu="@menu/drawer"/>
+        app:menu="@menu/drawer" />
 </android.support.v4.widget.DrawerLayout>

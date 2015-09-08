@@ -2,6 +2,7 @@
 This is an super example of navigation view in drawer layout android.   
 Whole project file has been uploaded.     
 Have fun
+
 ![alt tag](https://github.com/JianhuiZhu/NavigationViewInDrawerLayoutExample/blob/master/example.gif)   
 #Library    
      compile 'com.android.support:design:23.0.1'
